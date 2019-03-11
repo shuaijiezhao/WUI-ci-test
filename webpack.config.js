@@ -24,5 +24,8 @@ module.exports = {
             title: 'WUI-React',
             template: 'index.html'
         })
-    ]
+    ],
+    performance: {
+        hints: false
+    }
 }
