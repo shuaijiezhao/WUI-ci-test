@@ -23,7 +23,7 @@
         "allowSyntheticDefaultImports": true,
         "noUnusedLocals": true
     },
-    "include": [],
+    // "include": [],
     "exclude": [
         "node_modules",
         "build",
