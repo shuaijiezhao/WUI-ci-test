@@ -22,6 +22,14 @@ module.exports = {
                 test: /\.svg$/,
                 loader: 'svg-sprite-loader'
             },
+            {
+                test: /\.scss$/,
+                /** 从右往左使用，sass-loader把.scss以字符串的形式变成.css，
+                 * 再由css-loader变成对象（或者字符串），
+                 * 再由style-loader把对象或者字符串变成style标签引入html
+                 */
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
         ]
     },
 }
