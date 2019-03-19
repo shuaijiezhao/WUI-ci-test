@@ -5,15 +5,17 @@ import React from 'react';
 // import './Icons/alipay.svg';
 import './importIcons' // 非静态引入文件（全部引入）
 import './icon.scss'
+import classes from './handlers/classes'
 
-interface IconProps {
+interface IconProps extends React.SVGAttributes<SVGElement>{
     name: string;
-    onClick: React.MouseEventHandler<SVGElement>
 }
 
 const Icon: React.FunctionComponent<IconProps> = (props) => {
+    const { className, ...restProps } = props;
     return (
-        <svg className="icon" onClick={props.onClick}>
+        <svg className={classes('icon', className)}
+             {...restProps}>
             <use xlinkHref={`#${props.name}`}/>
         </svg>
     )
