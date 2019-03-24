@@ -3,9 +3,9 @@ import React from 'react';
 // import '../Icons/wechat.svg';
 // import '../Icons/qq.svg';
 // import '../Icons/alipay.svg';
-import './importIcons' // 非静态引入文件（全部引入）
-import './icon.scss'
-import classes from '../handlers/classes'
+import './importIcons'; // 非静态引入文件（全部引入）
+import './icon.scss';
+import classes from '../handlers/classes';
 
 interface IconProps extends React.SVGAttributes<SVGElement>{
     name: string;
