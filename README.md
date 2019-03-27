@@ -1,1 +1,2 @@
-# webpack-demo
+[![CircleCI](https://circleci.com/gh/shuaijiezhao/WUI-ci-test.svg?style=svg)](https://circleci.com/gh/shuaijiezhao/WUI-ci-test)
+[![npm version](https://badge.fury.io/js/wui-test.svg)](https://badge.fury.io/js/wui-test)
