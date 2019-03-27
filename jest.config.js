@@ -3,11 +3,8 @@
 module.exports = {
     verbose: true,
     clearMocks: false,
-    collectCoverage: true,
-    collectCoverageFrom: ["lib/**/*.{js,jsx,ts,tsx}", "!**/node_modules/**"],
-    coverageDirectory: 'coverage',
-    coverageReporters: ['text', 'lcov'],
-    reporters: ["default", "jest-junit"],
+    collectCoverage: false,
+    reporters: ["default"],
     globals: {
         'ts-jest': {
             tsConfig: 'tsconfig.test.json',
@@ -25,4 +22,4 @@ module.exports = {
         '^.+\\.(ts|tsx)$': 'ts-jest',
     },
     setupFilesAfterEnv: ["<rootDir>test/setupTests.js"]
-}
+};
