@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
     entry: {
-        index: './lib/index.tsx'
+        index: './example.tsx'
     },
     output: {
         path: path.resolve(__dirname, 'dist/lib'),

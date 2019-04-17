@@ -1,0 +1,19 @@
+[attr^='wui-'] {
+    box-sizing: border-box;
+    font-size: 14px;
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+// button 通用样式
+.wui-btn {
+    min-width: 72px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 4px 13px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}

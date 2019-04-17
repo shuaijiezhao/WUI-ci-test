@@ -6,7 +6,7 @@ module.exports = Object.assign({}, base, {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'WUI-React',
-            template: 'index.html'
+            template: 'example.html'
         })
     ],
 })
