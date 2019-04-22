@@ -3,12 +3,13 @@ import './button.scss';
 import classes from '../handlers/classes';
 
 interface Props {
-    colors?: string
+    colors?: string,
+    onClick?: React.MouseEventHandler
 }
 
 const Button: React.FunctionComponent<Props> = (props) => {
     return (
-        <button className={classes('wui-btn', `wui-btn-${props.colors}`)}>
+        <button onClick={props.onClick} className={classes('wui-btn', `wui-btn-${props.colors}`)}>
             {props.children}
         </button>
     )

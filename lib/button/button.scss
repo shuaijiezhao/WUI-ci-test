@@ -1,14 +1,15 @@
+@import "../_helper.scss";
 // 个性化按钮样式
 .wui-btn {
     &-primary {
-        background-color: #f53c32;
+        background-color: $primary-bg-color;
         color: white;
     }
     &-primary:hover {
         background-color: #e60012;
     }
     &-secondary {
-        background-color: #eceff1;
+        background-color: $secondary-bg-color;
     }
     &-secondary:hover {
         background-color: #dfe1e6;

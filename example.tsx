@@ -16,10 +16,10 @@ ReactDOM.render(
                     <h2>组件</h2>
                     <ul>
                         <li>
-                            <Link to="/button">按钮</Link>
+                            <Link to="/button">Button</Link>
                         </li>
                         <li>
-                            <Link to="/dialog">对话窗</Link>
+                            <Link to="/dialog">Model</Link>
                         </li>
                     </ul>
                 </aside>
