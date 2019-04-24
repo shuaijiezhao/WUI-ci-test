@@ -1,0 +1,45 @@
+@import "../helper";
+.wui-layout {
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    &-header,
+    &-content,
+    &-footer,
+    &-aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-header {
+        background: #7dbcea;
+        flex-grow: 0.5;
+    }
+    &-content {
+        background: rgba(16, 142, 233, 1);
+        flex-grow: 1;
+    }
+    &-footer {
+        background: #7dbcea;
+        flex-grow: 0.5;
+    }
+    & & {
+        display: flex;
+        flex-direction: row;
+    }
+    &-aside {
+        background: #1890ff;
+        flex: 0 0 200px;
+    }
+    &-hasAside {
+        display: flex;
+        flex-direction: row;
+        .wui-layout {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
