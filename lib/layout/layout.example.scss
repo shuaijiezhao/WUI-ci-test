@@ -2,20 +2,20 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: #4285f4;
+    background: #e0e0e0;
     margin: 4px 0;
-    color: white;
 }
 .y {
-    background: lighten(#4285f4, 5%);
+    background: lighten(#bdbdbd, 0);
     margin: 4px 0;
-    color: white;
 }
 .z {
-    background: #34a853;
+    background: #eeeeee;
     width: 100px;
     margin: 4px 0;
-    color: white;
+}
+.x, .y, .z {
+    color: #333;
 }
 .y, .z {
     display: flex;
