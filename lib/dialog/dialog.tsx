@@ -26,7 +26,7 @@ const Dialog: React.FunctionComponent<Props> = (props) => {
     const portal = props.visible ?
         <Fragment>
             <div className={scopedClass('mask')} onClick={onClickMask}></div>
-            <div className={scopedClass()}>
+            <div className={scopedClass('')}>
                 <div className={scopedClass('close')} onClick={onClose}>
                     <Icon name="close" />
                 </div>

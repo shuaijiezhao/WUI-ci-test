@@ -3,9 +3,15 @@ import {scopedClassMaker} from "../handlers/classes";
 
 const scm = scopedClassMaker('wui-layout');
 
-const Aside: React.FunctionComponent = (props) => {
+interface Props extends React.HTMLAttributes<HTMLElement>{
+}
+
+const Aside: React.FunctionComponent<Props> = (props) => {
+    const {className, ...rest} = props;
     return (
-        <div className={scm('aside')}>aside</div>
+        <div className={scm("aside", {extra: className})} {...rest}>
+            {props.children}
+        </div>
     )
 }
 

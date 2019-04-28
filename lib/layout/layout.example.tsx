@@ -1,51 +1,84 @@
 import React from "react";
+
 import Layout from "./layout";
 import Aside from "./aside";
 import Footer from "./footer";
 import Content from "./content";
 import Header from "./header";
 
+import './layout.example.scss';
+
 export default function () {
     return (
         <React.Fragment>
             <div>
                 <h2>Example1</h2>
-                <Layout className="example1">
-                    <Header></Header>
-                    <Content></Content>
-                    <Footer></Footer>
+                <Layout style={{height: 500}} className="hi">
+                    <Header className="x">
+                        <div>header</div>
+                    </Header>
+                    <Content className="y">
+                        <div>content</div>
+                    </Content>
+                    <Footer className="x">
+                        <div>footer</div>
+                    </Footer>
                 </Layout>
             </div>
             <div>
                 <h2>Example2</h2>
-                <Layout className="example2">
-                    <Header></Header>
-                    <Layout>
-                        <Aside></Aside>
-                        <Content></Content>
+                <Layout style={{height: 500}} className="hi">
+                    <Header className="x">
+                        <div>header</div>
+                    </Header>
+                    <Layout className="example">
+                        <Aside className="z">
+                            <div>aside</div>
+                        </Aside>
+                        <Content className="y">
+                            <div>content</div>
+                        </Content>
                     </Layout>
-                    <Footer></Footer>
+                    <Footer className="x">
+                        <div>footer</div>
+                    </Footer>
                 </Layout>
             </div>
             <div>
                 <h2>Example3</h2>
-                <Layout className="example3">
-                    <Header></Header>
-                    <Layout>
-                        <Content></Content>
-                        <Aside></Aside>
+                <Layout style={{height: 500}} className="hi">
+                    <Header className="x">
+                        <div>header</div>
+                    </Header>
+                    <Layout className="example">
+                        <Content className="y">
+                            <div>content</div>
+                        </Content>
+                        <Aside className="z">
+                            <div>aside</div>
+                        </Aside>
                     </Layout>
-                    <Footer></Footer>
+                    <Footer className="x">
+                        <div>footer</div>
+                    </Footer>
                 </Layout>
             </div>
             <div>
                 <h2>Example4</h2>
-                <Layout className="example4">
-                    <Aside></Aside>
+                <Layout style={{height: 500}} className="example">
+                    <Aside className="z">
+                        <div>aside</div>
+                    </Aside>
                     <Layout>
-                        <Header></Header>
-                        <Content></Content>
-                        <Footer></Footer>
+                        <Header className="x">
+                            <div>header</div>
+                        </Header>
+                        <Content className="y">
+                            <div>content</div>
+                        </Content>
+                        <Footer className="x">
+                            <div>footer</div>
+                        </Footer>
                     </Layout>
                 </Layout>
             </div>

@@ -1,0 +1,27 @@
+.x {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #4285f4;
+    margin: 4px 0;
+    color: white;
+}
+.y {
+    background: lighten(#4285f4, 5%);
+    margin: 4px 0;
+    color: white;
+}
+.z {
+    background: #34a853;
+    width: 100px;
+    margin: 4px 0;
+    color: white;
+}
+.y, .z {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.z + .y, .y + .z, .z + .gu-layout {
+    margin-left: 8px;
+}
