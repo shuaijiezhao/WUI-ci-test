@@ -21,8 +21,11 @@ body {
     padding-top: 16px;
 }
 .site-header {
+    position: sticky;
+    top: 0;
     padding: 8px 0;
     border-bottom: 1px solid #DFDFDF;
+    background: fade_out(#fff, 0.5);
     .logo {
         padding: 0 $padding;
         display: flex;
