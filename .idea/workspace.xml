@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f870fbfb-8254-41b9-baf5-3628d99a3e47" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/dist/lib/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/dialog/dialog.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13">
+              <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.prod.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.dev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/webpack.config.dev.js" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="25" />
+    <option name="y" value="275" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557054609130" />
+    <property name="ts.external.directory.path" value="E:\Study\React-study\code\WUI\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f870fbfb-8254-41b9-baf5-3628d99a3e47" name="Default Changelist" comment="update .gitignore" />
+      <created>1552459211237</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552459211237</updated>
+      <workItem from="1552459220182" duration="8623000" />
+      <workItem from="1552897910054" duration="13301000" />
+      <workItem from="1553386812932" duration="18384000" />
+      <workItem from="1553475232071" duration="13134000" />
+      <workItem from="1553563977545" duration="11809000" />
+      <workItem from="1553823513446" duration="119000" />
+      <workItem from="1554112462205" duration="626000" />
+      <workItem from="1554113156888" duration="8000" />
+      <workItem from="1554795411320" duration="627000" />
+      <workItem from="1554888848918" duration="846000" />
+      <workItem from="1555292137662" duration="1547000" />
+      <workItem from="1555319499993" duration="47000" />
+      <workItem from="1555319806731" duration="419000" />
+      <workItem from="1555320836888" duration="66000" />
+      <workItem from="1555320926904" duration="44424000" />
+      <workItem from="1555568499651" duration="2771000" />
+      <workItem from="1555594285137" duration="1816000" />
+      <workItem from="1555649971788" duration="6550000" />
+      <workItem from="1555897812059" duration="1389000" />
+      <workItem from="1555899251443" duration="702000" />
+      <workItem from="1555917497904" duration="33763000" />
+      <workItem from="1556003993462" duration="4346000" />
+      <workItem from="1556260208444" duration="18981000" />
+      <workItem from="1556413376111" duration="4967000" />
+      <workItem from="1556422493095" duration="14799000" />
+      <workItem from="1556499272164" duration="605000" />
+      <workItem from="1556507960700" duration="5743000" />
+      <workItem from="1556587090462" duration="10116000" />
+      <workItem from="1556614492879" duration="6010000" />
+    </task>
+    <task id="LOCAL-00001" summary="update webpack.config">
+      <created>1557052486635</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557052486635</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加 scss">
+      <created>1552900319467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552900319467</updated>
+    </task>
+    <task id="LOCAL-00003" summary="事件类型完善">
+      <created>1552902447580</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552902447580</updated>
+    </task>
+    <task id="LOCAL-00004" summary="支持传多个 className">
+      <created>1552987133031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552987133031</updated>
+    </task>
+    <task id="LOCAL-00005" summary="解构赋值作为参数">
+      <created>1552987917523</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552987917523</updated>
+    </task>
+    <task id="LOCAL-00006" summary="创建 icon 目录，对  icon 相关文件进行整理">
+      <created>1553397910720</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553397910720</updated>
+    </task>
+    <task id="LOCAL-00007" summary="icon 单元测试">
+      <created>1553418586022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553418586022</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add code coverage details">
+      <created>1553430370133</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553430370134</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add circleci config">
+      <created>1553484810179</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1553484810179</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ignore test-results">
+      <created>1553485582902</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553485582902</updated>
+    </task>
+    <task id="LOCAL-00011" summary="first publish success">
+      <created>1553499551235</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553499551236</updated>
+    </task>
+    <task id="LOCAL-00012" summary="auto publish">
+      <created>1553668366205</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553668366205</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add npm_token">
+      <created>1553672290380</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1553672290380</updated>
+    </task>
+    <task id="LOCAL-00014" summary="version change">
+      <created>1553672433981</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1553672433981</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add deploy">
+      <created>1553673858019</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1553673858019</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update filters">
+      <created>1553675646817</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1553675646817</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add badges">
+      <created>1553691817630</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1553691817630</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add jest.config.ci.js">
+      <created>1553693064636</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1553693064636</updated>
+    </task>
+    <task id="LOCAL-00019" summary="code formate">
+      <created>1554888987660</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1554888987660</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add ButtonComponent and DialogComponent">
+      <created>1555467908222</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1555467908222</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Button 样式微调">
+      <created>1555470292491</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1555470292492</updated>
+    </task>
+    <task id="LOCAL-00022" summary="version update">
+      <created>1555470710758</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1555470710758</updated>
+    </task>
+    <task id="LOCAL-00023" summary="deploy change">
+      <created>1555472249218</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1555472249219</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Dialog Component 完善">
+      <created>1555924356696</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1555924356696</updated>
+    </task>
+    <task id="LOCAL-00025" summary="classes.tsx 重构">
+      <created>1556072139976</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1556072139977</updated>
+    </task>
+    <task id="LOCAL-00026" summary="classes.tsx 重构">
+      <created>1556072251647</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1556072251647</updated>
+    </task>
+    <task id="LOCAL-00027" summary="重构 classes.tsx">
+      <created>1556262461718</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556262461718</updated>
+    </task>
+    <task id="LOCAL-00028" summary="classes.tsx 函数式重构">
+      <created>1556263521312</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1556263521312</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add icon.example.tsx">
+      <created>1556437662982</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1556437662982</updated>
+    </task>
+    <task id="LOCAL-00030" summary="官网雏形完成">
+      <created>1556437714486</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1556437714486</updated>
+    </task>
+    <task id="LOCAL-00031" summary="layout 样式调整">
+      <created>1556438773617</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1556438773618</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update deploy.sh">
+      <created>1556456124485</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1556456124486</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update deploy.sh">
+      <created>1556456520305</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1556456520305</updated>
+    </task>
+    <task id="LOCAL-00034" summary="npm version patch">
+      <created>1556497521159</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1556497521159</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update deploy.sh">
+      <created>1556508080628</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1556508080628</updated>
+    </task>
+    <task id="LOCAL-00036" summary="注释掉 branches">
+      <created>1556514896242</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1556514896242</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update deploy.sh">
+      <created>1556514926800</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1556514926800</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update config.yml">
+      <created>1556519862317</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1556519862317</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add note">
+      <created>1556587773282</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1556587773283</updated>
+    </task>
+    <task id="LOCAL-00040" summary="add yarn doc">
+      <created>1556604853060</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1556604853060</updated>
+    </task>
+    <task id="LOCAL-00041" summary="add doc.sh">
+      <created>1556605717160</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1556605717160</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update ..">
+      <created>1556606097182</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1556606097182</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update .gitignore">
+      <created>1556611971521</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1556611971521</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7940000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.46764705" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29117647" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6308824" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32647058" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49932975" visible="true" weight="0.7441176" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.6544118" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932975" weight="0.36911765" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32794118" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.23257373" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32935917" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24932976" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="9" visible="true" weight="0.21715818" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32668713" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.24645892" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.20113315" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932975" weight="0.3696884" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3286119" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.23323397" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32935917" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24932976" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="9" visible="true" weight="0.21849866" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update filters" />
+    <MESSAGE value="add badges" />
+    <MESSAGE value="add jest.config.ci.js" />
+    <MESSAGE value="code formate" />
+    <MESSAGE value="add ButtonComponent and DialogComponent" />
+    <MESSAGE value="Button 样式微调" />
+    <MESSAGE value="version update" />
+    <MESSAGE value="deploy change" />
+    <MESSAGE value="Dialog Component 完善" />
+    <MESSAGE value="classes.tsx 重构" />
+    <MESSAGE value="重构 classes.tsx" />
+    <MESSAGE value="classes.tsx 函数式重构" />
+    <MESSAGE value="add icon.example.tsx" />
+    <MESSAGE value="官网雏形完成" />
+    <MESSAGE value="layout 样式调整" />
+    <MESSAGE value="npm version patch" />
+    <MESSAGE value="注释掉 branches" />
+    <MESSAGE value="update deploy.sh" />
+    <MESSAGE value="update config.yml" />
+    <MESSAGE value="add note" />
+    <MESSAGE value="add yarn doc" />
+    <MESSAGE value="add doc.sh" />
+    <MESSAGE value="update .." />
+    <MESSAGE value="update .gitignore" />
+    <MESSAGE value="update webpack.config" />
+    <option name="LAST_COMMIT_MESSAGE" value="update webpack.config" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/webpack.config.doc.js" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dialog/dialog.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
