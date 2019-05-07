@@ -1,2 +1,17 @@
-$primary-bg-color: #f53c32;
+$primary-bg-color: rgb(245, 60, 50);
 $secondary-bg-color: #eceff1;
+$success-bg-color: rgb(76,175,80);
+$info-bg-color: rgb(0,188,212);
+$warning-bg-color: rgb(255,152,0);
+$danger-bg-color: rgb(244,67,54);
+$dark-bg-color: rgb(97,97,97);
+.wui-panel {
+    color: #757575;
+    position: relative;
+    margin-bottom: 20px;
+    //-webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    //box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 18px 20px;
+    border: 1px solid #F0F0F0;
+}
