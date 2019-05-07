@@ -1,6 +1,6 @@
 import React, {Fragment, ReactElement, ReactNode} from "react";
 import ReactDOM from "react-dom";
-import {Icon} from '../index'
+import {Button, Icon} from '../index'
 import {scopedClassMaker} from "../handlers/classes";
 
 import './dialog.scss';
@@ -88,8 +88,8 @@ const confirm = (content: string, yes: ()=>void, no: ()=>void) => {
         no && no();
     }
     const buttons = [
-            <button onClick={onNo} style={{marginRight: '10px'}}>取消</button>,
-            <button onClick={onYes}>确定</button>
+            <Button colors="secondary" onClick={onNo}>取消</Button>,
+            <Button colors="primary" onClick={onYes}>确定</Button>
         ]
     const close = modal(content, buttons, no)
 }

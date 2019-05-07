@@ -24,11 +24,15 @@ export default function () {
             </div>
             <div className="wui-panel">
                 <h4>Alert、Confirm、Modal</h4>
-                <button onClick={() => alert("alert")}
-                        style={{marginRight: '10px'}}>alert</button>
-                <button onClick={() => confirm("confirm", ()=>console.log('yes'), ()=>console.log('no'))}
-                        style={{marginRight: '10px'}}>confirm</button>
-                <button onClick={openModal}>modal</button>
+                <Button colors="primary" onClick={() => alert("alert")}>alert</Button>
+            </div>
+            <div className="wui-panel">
+                <h4>Confirm</h4>
+                <Button colors="primary" onClick={() => confirm("confirm", ()=>console.log('yes'), ()=>console.log('no'))}>confirm</Button>
+            </div>
+            <div className="wui-panel">
+                <h4>Modal</h4>
+                <Button colors="primary" onClick={openModal}>modal</Button>
             </div>
         </React.Fragment>
     )
