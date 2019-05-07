@@ -13,7 +13,7 @@ export default function () {
     }
     return (
         <React.Fragment>
-            <div>
+            <div className="wui-panel">
                 <h4>Example1</h4>
                 <Button colors="primary" onClick={() => setX(!x)}>打开模态框</Button>
                 <Dialog visible={x}
@@ -22,7 +22,7 @@ export default function () {
                                 <Button colors="primary" onClick={() => setX(false)}>确定</Button>]}
                         onClose={() => setX(false)}>dialog</Dialog>
             </div>
-            <div>
+            <div className="wui-panel">
                 <h4>Alert、Confirm、Modal</h4>
                 <button onClick={() => alert("alert")}
                         style={{marginRight: '10px'}}>alert</button>
