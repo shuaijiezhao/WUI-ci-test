@@ -6,3 +6,9 @@
     fill: currentColor;
     padding: 0 4px;
 }
+.icon-contain .icon {
+    transition: font-size 0.25s ease-out 0s;
+    &:hover {
+        font-size: 20px;
+    }
+}
