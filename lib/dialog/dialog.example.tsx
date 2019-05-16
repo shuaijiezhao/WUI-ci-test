@@ -23,7 +23,7 @@ export default function () {
                         onClose={() => setX(false)}>dialog</Dialog>
             </div>
             <div className="wui-panel">
-                <h4>Alert、Confirm、Modal</h4>
+                <h4>Alert</h4>
                 <Button colors="primary" onClick={() => alert("alert")}>alert</Button>
             </div>
             <div className="wui-panel">

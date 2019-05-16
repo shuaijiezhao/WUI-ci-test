@@ -13,11 +13,23 @@ import './example.scss';
 const logo = require('./wui.png')
 
 const componentArray = [
+    ["/", "概述"],
     ["/icon", "Icon"],
     ["/button", "Button"],
     ["/dialog", "Model"],
     ["/layout", "Layout"],
 ]
+
+const App: React.FunctionComponent = () => {
+    return (
+        <div id="wui-docs" className="wui-docs">
+            <h1>关于 <code>wui</code></h1>
+            <p>
+                <code>wui</code> 是一套基 <code>React.js</code> 的开源组件库。
+            </p>
+        </div>
+    )
+}
 
 ReactDOM.render(
     <Router>
@@ -35,7 +47,7 @@ ReactDOM.render(
                         {componentArray.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <NavLink to={item[0]}>{item[1]}</NavLink>
+                                    <NavLink exact to={item[0]}>{item[1]}</NavLink>
                                 </li>
                             )
                         })}
@@ -43,7 +55,8 @@ ReactDOM.render(
                 </Aside>
                 <Layout>
                     <Content className="site-main">
-                        <Route exact path="/icon" component={IconExample}/>
+                        <Route exact path="/" component={App}/>
+                        <Route path="/icon" component={IconExample}/>
                         <Route path="/button" component={ButtonExample}/>
                         <Route path="/dialog" component={DialogExample}/>
                         <Route path="/layout" component={LayoutExample}/>
