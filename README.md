@@ -1,5 +1,4 @@
-# **React** · [![CircleCI](https://circleci.com/gh/shuaijiezhao/WUI-ci-test.svg?style=svg)](https://circleci.com/gh/shuaijiezhao/WUI-ci-test)
-[![npm version](https://badge.fury.io/js/wui-test.svg)](https://badge.fury.io/js/wui-test)
+[![CircleCI](https://circleci.com/gh/shuaijiezhao/wui-react.svg?style=svg)](https://circleci.com/gh/shuaijiezhao/wui-react)[![npm version](https://badge.fury.io/js/wui-test.svg)](https://badge.fury.io/js/wui-test)
 
 * 下载依赖包
 在根目录下执行    
