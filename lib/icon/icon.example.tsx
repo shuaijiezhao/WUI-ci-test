@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "./icon";
 
-export default function () {
+const IconExample: React.FunctionComponent = () => {
     return (
         <div className="icon-contain">
             <Icon name="wechat"/>
@@ -10,3 +10,5 @@ export default function () {
         </div>
     )
 }
+
+export default IconExample

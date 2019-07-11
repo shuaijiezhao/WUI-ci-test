@@ -5,10 +5,11 @@ import {HashRouter as Router, Route, NavLink} from "react-router-dom";
 import ButtonExample from "./lib/button/button.example";
 import DialogExample from "./lib/dialog/dialog.example";
 import LayoutExample from "./lib/layout/layout.example";
-import IconExample from "./lib/icon/icon.example";
+// import IconExample from "./lib/icon/icon.example";
 import Layout, {Aside, Content, Footer, Header} from "./lib/layout/layout";
 
 import './example.scss';
+import IconDemo from "./lib/icon/icon.demo";
 
 const logo = require('./wui.png')
 
@@ -56,7 +57,7 @@ ReactDOM.render(
                 <Layout>
                     <Content className="site-main">
                         <Route exact path="/" component={App}/>
-                        <Route path="/icon" component={IconExample}/>
+                        <Route path="/icon" component={IconDemo}/>
                         <Route path="/button" component={ButtonExample}/>
                         <Route path="/dialog" component={DialogExample}/>
                         <Route path="/layout" component={LayoutExample}/>
