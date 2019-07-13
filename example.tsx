@@ -13,22 +13,34 @@ import IconDemo from "./lib/icon/icon.demo";
 
 const logo = require('./wui.png')
 
-const generalArray: Array<Array<string>> = [
-    ["/icon", "图标  Icon"],
-    ["/button", "按钮  Button"],
-    ["/dialog", "弹窗  Model"]
-]
-
-const layoutArray: Array<Array<string>> = [
-    ["/layout", "页面布局  PageLayout"]
+const floorArray:Array<Array<Array<string | Array<string>>>> = [
+    [
+        ["基础 Genaral"],
+        [
+            ["/icon", "图标 Icon"],
+            ["/button", "按钮 Button"]
+        ]
+    ],
+    [
+        ["布局 Layout"],
+        [
+            ["/layout", "页面布局 PageLayout"]
+        ]
+    ],
+    [
+        ["反馈 Feedback"],
+        [
+            ["/dialog", "模态窗 Model"]
+        ]
+    ]
 ]
 
 const App: React.FunctionComponent = () => {
     return (
         <div id="wui-docs" className="wui-docs">
-            <h1>关于 <code>wui</code></h1>
+            <h1>关于 <code>wui-react</code></h1>
             <p>
-                <code>wui</code> 是一套基 <code>React.js</code> 的开源组件库。
+                <code>wui-react</code> 是一套基 <code>React.js</code> 的开源组件库。
             </p>
         </div>
     )
@@ -40,7 +52,7 @@ ReactDOM.render(
             <Header className="site-header">
                 <div className="logo">
                     <img src={logo} width="48" height="48" alt=""/>
-                    <span> WUI </span>
+                    <span> wui-react </span>
                 </div>
             </Header>
             <Layout>
@@ -50,32 +62,26 @@ ReactDOM.render(
                             <NavLink exact to="/"><span>概述</span></NavLink>
                         </li>
                         <li>
-                            <h2>组件</h2>
                             <ul>
-                                <li>
-                                    <h3>基础</h3>
-                                    <ul>
-                                        {generalArray.map((item, index) => {
-                                            return (
-                                                <li key={index}>
-                                                    <NavLink to={item[0]}>{item[1]}</NavLink>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h3>布局</h3>
-                                    <ul>
-                                        {layoutArray.map((item, index) => {
-                                            return (
-                                                <li key={index}>
-                                                    <NavLink to={item[0]}>{item[1]}</NavLink>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </li>
+                                <h2>组件</h2>
+                                {
+                                    floorArray.map((floor, index) => {
+                                        return (
+                                            <li key={index}>
+                                                <h3>{floor[0]}</h3>
+                                                <ul>
+                                                    {floor[1].map((item, i) => {
+                                                        return (
+                                                            <li key={i}>
+                                                                <NavLink to={item[0]}>{item[1]}</NavLink>
+                                                            </li>
+                                                        )
+                                                    })}
+                                                </ul>
+                                            </li>
+                                        )
+                                    })
+                                }
                             </ul>
                         </li>
                     </ul>
