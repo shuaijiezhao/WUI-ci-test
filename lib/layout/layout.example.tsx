@@ -13,7 +13,7 @@ export default function () {
         <React.Fragment>
             <div>
                 <h2>Example1</h2>
-                <Layout style={{height: 500}} className="hi">
+                <Layout style={{height: 500}}>
                     <Header className="x">
                         <div>header</div>
                     </Header>
@@ -27,7 +27,7 @@ export default function () {
             </div>
             <div>
                 <h2>Example2</h2>
-                <Layout style={{height: 500}} className="hi">
+                <Layout style={{height: 500}}>
                     <Header className="x">
                         <div>header</div>
                     </Header>
@@ -46,7 +46,7 @@ export default function () {
             </div>
             <div>
                 <h2>Example3</h2>
-                <Layout style={{height: 500}} className="hi">
+                <Layout style={{height: 500}}>
                     <Header className="x">
                         <div>header</div>
                     </Header>

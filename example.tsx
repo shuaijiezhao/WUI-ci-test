@@ -13,13 +13,15 @@ import IconDemo from "./lib/icon/icon.demo";
 
 const logo = require('./wui.png')
 
-const componentArray = [
-    ["/", "概述"],
-    ["/icon", "Icon"],
-    ["/button", "Button"],
-    ["/dialog", "Model"],
-    ["/layout", "Layout"],
+const generalArray: Array<Array<string>> = [
+    ["/icon", "图标  Icon"],
+    ["/button", "按钮  Button"],
+    ["/dialog", "弹窗  Model"]
 ]
+
+// const layoutArray: Array<Array<string>> = [
+//     ["/layout", "页面布局  Layout"]
+// ]
 
 const App: React.FunctionComponent = () => {
     return (
@@ -43,15 +45,28 @@ ReactDOM.render(
             </Header>
             <Layout>
                 <Aside className="site-aside">
-                    <h2>组件</h2>
                     <ul>
-                        {componentArray.map((item, index) => {
-                            return (
-                                <li key={index}>
-                                    <NavLink exact to={item[0]}>{item[1]}</NavLink>
+                        <li className="first-floor">
+                            <NavLink exact to="/"><span>概述</span></NavLink>
+                        </li>
+                        <li>
+                            <h2>组件</h2>
+                            <ul>
+                                <li>
+                                    <h3>基础</h3>
+                                    <ul>
+                                        {generalArray.map((item, index) => {
+                                            return (
+                                                <li key={index}>
+                                                    <NavLink to={item[0]}>{item[1]}</NavLink>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
                                 </li>
-                            )
-                        })}
+
+                            </ul>
+                        </li>
                     </ul>
                 </Aside>
                 <Layout>
@@ -63,7 +78,7 @@ ReactDOM.render(
                         <Route path="/layout" component={LayoutExample}/>
                     </Content>
                     <Footer className="site-footer">
-                        <div>版权所有：shuaijiezhao</div>
+                        <div>Copyright © 2019 版权所有：shuaijiezhao</div>
                     </Footer>
                 </Layout>
             </Layout>

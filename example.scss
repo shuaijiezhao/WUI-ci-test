@@ -17,9 +17,6 @@ body {
     background: #ffffff;
     min-height: 100vh;
 }
-.site-main {
-    padding-top: 16px;
-}
 .site-header {
     position: sticky;
     top: 0;
@@ -40,10 +37,19 @@ body {
 }
 .site-aside {
     border-right: 1px solid #EEEEEE;
-    margin-right: 16px;
     h2 {
-        padding: 16px 40px;
+        padding: 10px 40px;
         font-size: 18px;
+    }
+    h3 {
+        padding: 10px 50px;
+        font-size: 16px;
+    }
+    .first-floor {
+        a {
+            padding: 10px 40px;
+            font-size: 18px;
+        }
     }
     ul {
         min-width: 12em;
@@ -51,8 +57,7 @@ body {
             a {
                 color: #333;
                 display: block;
-                padding: 8px $padding;
-                text-align: center;
+                padding: 8px 60px;
                 &:hover {
                     color: $main-color;
                 }
@@ -64,6 +69,9 @@ body {
             }
         }
     }
+}
+.site-main {
+    margin: 20px 200px 20px 40px;
 }
 .site-footer {
     text-align: center;
