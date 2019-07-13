@@ -19,9 +19,9 @@ const generalArray: Array<Array<string>> = [
     ["/dialog", "弹窗  Model"]
 ]
 
-// const layoutArray: Array<Array<string>> = [
-//     ["/layout", "页面布局  Layout"]
-// ]
+const layoutArray: Array<Array<string>> = [
+    ["/layout", "页面布局  PageLayout"]
+]
 
 const App: React.FunctionComponent = () => {
     return (
@@ -64,7 +64,18 @@ ReactDOM.render(
                                         })}
                                     </ul>
                                 </li>
-
+                                <li>
+                                    <h3>布局</h3>
+                                    <ul>
+                                        {layoutArray.map((item, index) => {
+                                            return (
+                                                <li key={index}>
+                                                    <NavLink to={item[0]}>{item[1]}</NavLink>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                     </ul>
