@@ -15,7 +15,7 @@ const logo = require('./wui.png')
 
 const floorArray:Array<Array<Array<string | Array<string>>>> = [
     [
-        ["基础 Genaral"],
+        ["基础 General"],
         [
             ["/icon", "图标 Icon"],
             ["/button", "按钮 Button"]
