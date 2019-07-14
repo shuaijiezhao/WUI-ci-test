@@ -7,6 +7,11 @@ a { text-decoration: none; color: inherit; }
 pre {
     font-family: "Fira Code Medium", Consolas, monospace;
 }
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
 $padding: 16px;
 $main-color: #e14c46;
 $border-color: #eee;
