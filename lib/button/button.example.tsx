@@ -6,21 +6,21 @@ export default function () {
     return (
         <React.Fragment>
             <div className="wui-panel">
-                <h3><strong>默认按钮</strong></h3>
-                <p>主按钮、次按钮主要用于确定和取消</p>
+                <h3><strong>默认按钮</strong></h3><br/>
+                <p>主按钮、次按钮主要用于确定和取消</p><br/>
                 <Button colors="primary">主按钮</Button>
                 <Button colors="secondary">次按钮</Button>
             </div>
             <div className="wui-panel">
-                <h3><strong>不同颜色的按钮</strong></h3>
-                <p>通过`colors`属性控制按钮颜色</p>
+                <h3><strong>不同颜色的按钮</strong></h3><br/>
+                <p>通过`colors`属性控制按钮颜色</p><br/>
                 <Button colors="primary">primary</Button>
                 <Button colors="success">success</Button>
                 <Button colors="info">info</Button>
                 <Button colors="warning">warning</Button>
                 <Button colors="danger">danger</Button>
                 <Button colors="dark">dark</Button>
-                <br/>
+                <br/><br/>
                 <Button colors="primary" bordered="border">primary</Button>
                 <Button colors="success" bordered="border">success</Button>
                 <Button colors="info" bordered="border">info</Button>
@@ -29,16 +29,16 @@ export default function () {
                 <Button colors="dark" bordered="border">dark</Button>
             </div>
             <div className="wui-panel">
-                <h3><strong>按钮尺寸</strong></h3>
-                <p>按钮有小、中、大、巨大四种尺寸。通过设置 size 为 sm、lg、xg 分别把按钮设为小、大、巨大尺寸。若不设置 size，则尺寸为中。</p>
+                <h3><strong>按钮尺寸</strong></h3><br/>
+                <p>按钮有小、中、大、巨大四种尺寸。通过设置 size 为 sm、lg、xg 分别把按钮设为小、大、巨大尺寸。若不设置 size，则尺寸为中。</p><br/>
                 <Button colors="primary" size="sm">小按钮</Button>
                 <Button colors="primary">默认</Button>
                 <Button colors="primary" size="lg">大按钮</Button>
                 <Button colors="primary" size="xg">巨大按钮</Button>
             </div>
             <div className="wui-panel btn-demo">
-                <h3><strong>图标按钮</strong></h3>
-                <p>当需要在 Button 内嵌入图标时，可以在 Button 内使用 Icon 组件。</p>
+                <h3><strong>图标按钮</strong></h3><br/>
+                <p>当需要在 Button 内嵌入图标时，可以在 Button 内使用 Icon 组件。</p><br/>
                 <Button colors="primary" shape="icon"><Icon name="search"/></Button>
                 <Button colors="primary"><Icon name="search"/>Search</Button>
                 <Button colors="secondary" shape="icon"><Icon name="delete"/></Button>

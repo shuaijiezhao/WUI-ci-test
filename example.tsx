@@ -7,6 +7,7 @@ import DialogExample from "./lib/dialog/dialog.example";
 import LayoutExample from "./lib/layout/layout.example";
 // import IconExample from "./lib/icon/icon.example";
 import Layout, {Aside, Content, Footer, Header} from "./lib/layout/layout";
+import SwitchExample from "./lib/switch/switch.example";
 
 import './example.scss';
 import IconDemo from "./lib/icon/icon.demo";
@@ -31,6 +32,12 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
         ["反馈 Feedback"],
         [
             ["/dialog", "模态窗 Model"]
+        ]
+    ],
+    [
+        ["表单 Form"],
+        [
+            ["/switch", "开关 Switch"]
         ]
     ]
 ]
@@ -93,6 +100,7 @@ ReactDOM.render(
                         <Route path="/button" component={ButtonExample}/>
                         <Route path="/dialog" component={DialogExample}/>
                         <Route path="/layout" component={LayoutExample}/>
+                        <Route path="/switch" component={SwitchExample}/>
                     </Content>
                     <Footer className="site-footer">
                         <div>Copyright © 2019 版权所有：shuaijiezhao</div>
