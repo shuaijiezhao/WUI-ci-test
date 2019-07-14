@@ -18,7 +18,8 @@ const Switch: React.FunctionComponent<Props> = (props) => {
 
     return (
         <span className={classes("wui-switch",
-                        isChecked ? "is-checked" : "")} onClick={() => {setChecked(!isChecked)}}>
+                        isChecked ? "is-checked" : "",
+                        `wui-switch-${props.size}`)} onClick={() => {setChecked(!isChecked)}}>
             <span className={classes("wui-switch-inner")}></span>
         </span>
     )

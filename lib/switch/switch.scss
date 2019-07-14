@@ -12,6 +12,7 @@ $switch-checked-backColor: rgb(245, 60, 50);
 $switch-checked-afterLeft: 24px;
 $switch-checked-innerLeft: 18px;
 $switch-checked-activeLeft: 24px;
+$switch-after-widthHeight-lg: 26px;
 
 .wui-switch {
     position: relative;
@@ -99,70 +100,70 @@ $switch-checked-activeLeft: 24px;
     //        animation-name: none;
     //    }
     //}
-    //&.wui-switch-sm {
-    //    width: map-get($switch-width, small);
-    //    height: map-get($switch-height, small);
-    //    line-height: map-get($switch-lineHeight, small);
-    //    &-inner {
-    //        color: #fff;
-    //        position: absolute;
-    //        font-size: map_get($switch-inner-fontSize, small);
-    //        left: map_get($switch-inner-left, small);
-    //    }
-    //    &:active:after {
-    //        width: map_get($switch-active-width, small);
-    //    }
-    //
-    //    &:after {
-    //        width: $switch-after-widthHeight-sm;
-    //        height: $switch-after-widthHeight-sm;
-    //        top: $switch-after-top-sm;
-    //        left: $switch-after-left-sm;
-    //    }
-    //    &.is-checked {
-    //        .u-switch-inner {
-    //            left: map_get($switch-checked-innerLeft, small);
-    //        }
-    //        &:after {
-    //            left: map_get($switch-checked-afterLeft, small);
-    //        }
-    //        &:active:after {
-    //            left: map_get($switch-checked-activeLeft, small);
-    //        }
-    //    }
-    //}
-    //&.wui-switch-lg {
-    //    width: map-get($switch-width, large);
-    //    height: map-get($switch-height, large);
-    //    line-height: map-get($switch-lineHeight, large);
-    //    &-inner {
-    //        color: #fff;
-    //        position: absolute;
-    //        font-size: map_get($switch-inner-fontSize, large);
-    //        left: map_get($switch-inner-left, large);
-    //        top: $switch-inner-largeTop;
-    //    }
-    //    &:active:after {
-    //        width: map_get($switch-active-width, large);
-    //    }
-    //    &:after {
-    //        width: $switch-after-widthHeight-lg;
-    //        height: $switch-after-widthHeight-lg;
-    //        top: $switch-after-top-lg;
-    //        left: $switch-after-left-lg;
-    //    }
-    //    &.is-checked {
-    //        .u-switch-inner {
-    //            left: map_get($switch-checked-innerLeft, large);
-    //        }
-    //        &:after {
-    //            left: map_get($switch-checked-afterLeft, large);
-    //        }
-    //        &:active:after {
-    //            left: map_get($switch-checked-activeLeft, large);
-    //        }
-    //    }
-    //}
+    &.wui-switch-sm {
+        width: 32px;
+        height: 16px;
+        line-height: 12px;
+        &-inner {
+            color: #fff;
+            position: absolute;
+            font-size: 10px;
+            left: 16px;
+        }
+        &:active:after {
+            width: 16px;
+        }
+
+        &:after {
+            width: 14px;
+            height: 14px;
+            top: 0;
+            left: 0;
+        }
+        &.is-checked {
+            .wui-switch-inner {
+                left: 4px;
+            }
+            &:after {
+                left: 16px;
+            }
+            &:active:after {
+                left: 10px;
+            }
+        }
+    }
+    &.wui-switch-lg {
+        width: 60px;
+        height: 30px;
+        line-height: 12px;
+        &-inner {
+            color: #fff;
+            position: absolute;
+            font-size: $switch-inner-fontSize;
+            left: $switch-inner-left;
+            top: 8px;
+        }
+        &:active:after {
+            width: 32px;
+        }
+        &:after {
+            width: $switch-after-widthHeight-lg;
+            height: $switch-after-widthHeight-lg;
+            top: 1px;
+            left: 0;
+        }
+        &.is-checked {
+            .u-switch-inner {
+                left: 8px;
+            }
+            &:after {
+                left: 32px;
+            }
+            &:active:after {
+                left: 26px;
+            }
+        }
+    }
     //&-primary.is-checked {
     //    @include switch-styles-variant($switch-primary-bg);
     //}
