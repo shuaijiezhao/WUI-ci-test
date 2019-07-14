@@ -2,7 +2,7 @@ $switch-border-color: #A5ADBA;
 $switch-back-color: #A5ADBA;
 $switch-border-radius: 20px;
 $switch-inner-fontSize: 12px;
-$switch-inner-left: 22px;
+$switch-inner-left: 20px;
 $switch-after-widthHeight: 18px;
 $switch-after-top: 1px;
 $switch-after-left: 0;
@@ -10,7 +10,7 @@ $switch-border-radius-after: 18px;
 $switch-checked-borColor: rgb(245, 60, 50);
 $switch-checked-backColor: rgb(245, 60, 50);
 $switch-checked-afterLeft: 24px;
-$switch-checked-innerLeft: 18px;
+$switch-checked-innerLeft: 8px;
 $switch-checked-activeLeft: 24px;
 $switch-after-widthHeight-lg: 26px;
 
@@ -80,26 +80,26 @@ $switch-after-widthHeight-lg: 26px;
             left: $switch-checked-activeLeft;
         }
     }
-    //&.wui-switch-disabled {
-    //    cursor: no-drop;
-    //    background: #DFE1E6;
-    //    border-color: #DFE1E6;
-    //    &.is-checked {
-    //        border-color: $switch-checked-borColor;
-    //        background-color: $switch-checked-backColor;
-    //        opacity: 0.35;
-    //    }
-    //    &:after {
-    //        background: #fff;
-    //        animation-name: none;
-    //        cursor: no-drop;
-    //    }
-    //
-    //    &:hover:after {
-    //        transform: scale(1);
-    //        animation-name: none;
-    //    }
-    //}
+    &.wui-switch-disabled {
+        cursor: no-drop;
+        background: #DFE1E6;
+        border-color: #DFE1E6;
+        &.is-checked {
+            border-color: $switch-checked-borColor;
+            background-color: $switch-checked-backColor;
+            opacity: 0.35;
+        }
+        &:after {
+            background: #fff;
+            animation-name: none;
+            cursor: no-drop;
+        }
+
+        &:hover:after {
+            transform: scale(1);
+            animation-name: none;
+        }
+    }
     &.wui-switch-sm {
         width: 32px;
         height: 16px;
