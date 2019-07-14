@@ -1,30 +1,25 @@
-.x {
-    height: 40px;
-    line-height: 40px;
+.grayDeep {
+    background: #bdbdbd;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 30px;
     text-align: center;
+}
+.gray {
     background: #e0e0e0;
-    margin: 4px 0;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-align: center;
 }
-.y {
-    background: lighten(#bdbdbd, 0);
-    margin: 4px 0;
-}
-.z {
+.grayLight {
     background: #eeeeee;
-    width: 100px;
-    margin: 4px 0;
-}
-.x, .y, .z {
-    color: #333;
-}
-.y, .z {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.z + .y, .y + .z, .z + .gu-layout {
-    margin-left: 8px;
-}
-.wui-layout-aside + .wui-layout {
-    margin-left: 8px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #424242;
+    text-align: center;
+    line-height: 30px;
 }

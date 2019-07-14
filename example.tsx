@@ -5,8 +5,9 @@ import {HashRouter as Router, Route, NavLink} from "react-router-dom";
 import ButtonExample from "./lib/button/button.example";
 import DialogExample from "./lib/dialog/dialog.example";
 import LayoutExample from "./lib/layout/layout.example";
+import PageLayoutExample from "./lib/pagelayout/pagelayout.example";
 // import IconExample from "./lib/icon/icon.example";
-import Layout, {Aside, Content, Footer, Header} from "./lib/layout/layout";
+import Pagelayout, {Aside, Content, Footer, Header} from "./lib/pagelayout/pagelayout";
 import SwitchExample from "./lib/switch/switch.example";
 
 import './example.scss';
@@ -23,9 +24,10 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
         ]
     ],
     [
-        ["布局 Layout"],
+        ["布局 Pagelayout"],
         [
-            ["/layout", "页面布局 PageLayout"]
+            ["/layout", "栅格布局 Layout"],
+            ["/pagelayout", "页面布局 PageLayout"]
         ]
     ],
     [
@@ -55,14 +57,14 @@ const App: React.FunctionComponent = () => {
 
 ReactDOM.render(
     <Router>
-        <Layout className="site-page">
+        <Pagelayout className="site-page">
             <Header className="site-header">
                 <div className="logo">
                     <img src={logo} width="48" height="48" alt=""/>
                     <span> wui-react </span>
                 </div>
             </Header>
-            <Layout>
+            <Pagelayout>
                 <Aside className="site-aside">
                     <ul>
                         <li className="first-floor">
@@ -93,20 +95,21 @@ ReactDOM.render(
                         </li>
                     </ul>
                 </Aside>
-                <Layout>
+                <Pagelayout>
                     <Content className="site-main">
                         <Route exact path="/" component={App}/>
                         <Route path="/icon" component={IconDemo}/>
                         <Route path="/button" component={ButtonExample}/>
                         <Route path="/dialog" component={DialogExample}/>
                         <Route path="/layout" component={LayoutExample}/>
+                        <Route path="/pagelayout" component={PageLayoutExample}/>
                         <Route path="/switch" component={SwitchExample}/>
                     </Content>
                     <Footer className="site-footer">
                         <div>Copyright © 2019 版权所有：shuaijiezhao</div>
                     </Footer>
-                </Layout>
-            </Layout>
-        </Layout>
+                </Pagelayout>
+            </Pagelayout>
+        </Pagelayout>
     </Router>,
     document.querySelector("#root"))
