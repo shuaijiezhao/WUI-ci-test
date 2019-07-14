@@ -7,6 +7,9 @@ const IconExample: React.FunctionComponent = () => {
             <Icon name="wechat"/>
             <Icon name="qq"/>
             <Icon name="alipay"/>
+            <Icon name="home"/>
+            <Icon name="library"/>
+            <Icon name="cart"/>
         </div>
     )
 }

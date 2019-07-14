@@ -12,6 +12,7 @@ import SwitchExample from "./lib/switch/switch.example";
 
 import './example.scss';
 import IconDemo from "./lib/icon/icon.demo";
+import BreadcrumbExample from "./lib/breadcrumb/breadcrumb.example";
 
 const logo = require('./wui.png')
 
@@ -28,6 +29,12 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
         [
             ["/layout", "栅格布局 Layout"],
             ["/pagelayout", "页面布局 PageLayout"]
+        ]
+    ],
+    [
+        ["导航 Navigation"],
+        [
+            ["/breadcrumb", "面包屑 Breadcrumb"]
         ]
     ],
     [
@@ -103,6 +110,7 @@ ReactDOM.render(
                         <Route path="/dialog" component={DialogExample}/>
                         <Route path="/layout" component={LayoutExample}/>
                         <Route path="/pagelayout" component={PageLayoutExample}/>
+                        <Route path="/breadcrumb" component={BreadcrumbExample}/>
                         <Route path="/switch" component={SwitchExample}/>
                     </Content>
                     <Footer className="site-footer">
