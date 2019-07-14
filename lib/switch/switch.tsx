@@ -8,8 +8,8 @@ interface Props {
     checked: boolean,
     // defaultChecked: boolean,
     // onChange: React.MouseEventHandler,
-    checkedChildren?: any,
-    unCheckedChildren?: any,
+    checkedchildren?: any,
+    uncheckedchildren?: any,
     disabled?: boolean,
     size?: "sm" | "lg",
     colors?: "primary" | "success" | "info" | "dark" | "warning",
@@ -31,7 +31,7 @@ const Switch: React.FunctionComponent<Props> = (props) => {
               onClick={() => {!props.disabled && setChecked(!isChecked)}}
               { ...others }>
             <span className={classes("wui-switch-inner")}>
-                {isChecked ? props.checkedChildren : props.unCheckedChildren}
+                {isChecked ? props.checkedchildren : props.uncheckedchildren}
             </span>
         </span>
     )

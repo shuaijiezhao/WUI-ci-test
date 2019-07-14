@@ -45,7 +45,7 @@ const SwitchExample: React.FunctionComponent<Props> = (props) => {
                 <p>点击开关触发事件</p><br/>
                 <Row>
                     <Col sm={2}>
-                        <Switch checked={false} checkedChildren={"on"} unCheckedChildren={"off"}/>
+                        <Switch checked={false} checkedchildren={"on"} uncheckedchildren={"off"}/>
                     </Col>
                 </Row>
             </div>
