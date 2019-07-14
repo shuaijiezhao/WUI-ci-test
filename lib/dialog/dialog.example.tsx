@@ -14,7 +14,7 @@ export default function () {
     return (
         <React.Fragment>
             <div className="wui-panel">
-                <h4>Example1</h4>
+                <h4>Example1</h4><br/>
                 <Button colors="primary" onClick={() => setX(!x)}>打开模态框</Button>
                 <Dialog visible={x}
                         buttons={[
@@ -23,15 +23,15 @@ export default function () {
                         onClose={() => setX(false)}>dialog</Dialog>
             </div>
             <div className="wui-panel">
-                <h4>Alert</h4>
+                <h4>Alert</h4><br/>
                 <Button colors="primary" onClick={() => alert("alert")}>alert</Button>
             </div>
             <div className="wui-panel">
-                <h4>Confirm</h4>
+                <h4>Confirm</h4><br/>
                 <Button colors="primary" onClick={() => confirm("confirm", ()=>console.log('yes'), ()=>console.log('no'))}>confirm</Button>
             </div>
             <div className="wui-panel">
-                <h4>Modal</h4>
+                <h4>Modal</h4><br/>
                 <Button colors="primary" onClick={openModal}>modal</Button>
             </div>
         </React.Fragment>
