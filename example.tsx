@@ -67,7 +67,7 @@ ReactDOM.render(
         <Pagelayout className="site-page">
             <Header className="site-header">
                 <div className="logo">
-                    <img src={logo} width="48" height="48" alt=""/>
+                    <img src={logo} width="48" height="48" alt="wui-react"/>
                     <span> wui-react </span>
                 </div>
             </Header>
