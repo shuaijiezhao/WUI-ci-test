@@ -13,8 +13,9 @@ import SwitchExample from "./lib/switch/switch.example";
 import './example.scss';
 import IconDemo from "./lib/icon/icon.demo";
 import BreadcrumbExample from "./lib/breadcrumb/breadcrumb.example";
+import FormExample from "./lib/form/form.example";
 
-const logo = require('./wui.png')
+const logo = require('./wui.png');
 
 const floorArray:Array<Array<Array<string | Array<string>>>> = [
     [
@@ -46,10 +47,11 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
     [
         ["表单 Form"],
         [
+            ["/form", "表单 Form"],
             ["/switch", "开关 Switch"]
         ]
     ]
-]
+];
 
 const App: React.FunctionComponent = () => {
     return (
@@ -60,7 +62,7 @@ const App: React.FunctionComponent = () => {
             </p>
         </div>
     )
-}
+};
 
 ReactDOM.render(
     <Router>
@@ -112,6 +114,7 @@ ReactDOM.render(
                         <Route path="/pagelayout" component={PageLayoutExample}/>
                         <Route path="/breadcrumb" component={BreadcrumbExample}/>
                         <Route path="/switch" component={SwitchExample}/>
+                        <Route path="/form" component={FormExample}/>
                     </Content>
                     <Footer className="site-footer">
                         <div>Copyright © 2019 版权所有：shuaijiezhao</div>
@@ -120,4 +123,4 @@ ReactDOM.render(
             </Pagelayout>
         </Pagelayout>
     </Router>,
-    document.querySelector("#root"))
+    document.querySelector("#root"));
