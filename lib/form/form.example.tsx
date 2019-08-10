@@ -19,8 +19,8 @@ const FormExample: React.FunctionComponent = () => {
         <Form value={formData} fields={fields}
               buttons={
                   <Fragment>
-                      <Button btnType="submit" colors="primary" bordered="border">提交</Button>
-                      <Button colors="secondary">返回</Button>
+                      <Button shape="border">取消</Button>
+                      <Button btnType="submit" colors="primary">提交</Button>
                   </Fragment>
               }
               onChange={newValue => setFormData(newValue)}
