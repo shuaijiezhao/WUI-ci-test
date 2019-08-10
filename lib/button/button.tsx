@@ -8,12 +8,13 @@ interface Props {
     bordered?: 'border',
     size?: 'sm' | 'lg' | 'xg',
     shape?: 'block' | 'round' | 'border' | 'squared' | 'floating' | 'pillRight' | 'pillLeft' | 'icon',
-    disabled?: boolean
+    disabled?: boolean,
+    btnType?: 'submit' | 'reset' | 'button'
 }
 
 const Button: React.FunctionComponent<Props> = (props) => {
     return (
-        <button onClick={props.onClick} className={classes('wui-btn',
+        <button type={props.btnType} onClick={props.onClick} className={classes('wui-btn',
             props.colors !== undefined ? `wui-btn-${props.colors}` : undefined,
             props.bordered !== undefined ? `wui-btn-${props.bordered}` : undefined,
             props.size !== undefined ? `wui-btn-${props.size}` : undefined,
@@ -21,6 +22,6 @@ const Button: React.FunctionComponent<Props> = (props) => {
             {props.children}
         </button>
     )
-}
+};
 
 export default Button
