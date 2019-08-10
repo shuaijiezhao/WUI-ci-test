@@ -1,6 +1,7 @@
 import * as React from "react";
 import Form, {FormValue} from "./form";
 import {Fragment, useState} from "react";
+import {Button} from "../index";
 
 const FormExample: React.FunctionComponent = () => {
     const [formData, setFormData] = useState<FormValue>({
@@ -12,14 +13,14 @@ const FormExample: React.FunctionComponent = () => {
         {name: 'password', label: '密码', input: {type: 'password'}}
     ]);
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        console.log(formData);
+        console.log(formData, e);
     };
     return (
         <Form value={formData} fields={fields}
               buttons={
                   <Fragment>
-                      <button type="submit">提交</button>
-                      <button>返回</button>
+                      <Button btnType="submit" colors="primary" bordered="border">提交</Button>
+                      <Button colors="secondary">返回</Button>
                   </Fragment>
               }
               onChange={newValue => setFormData(newValue)}
