@@ -24,11 +24,6 @@ const Radio: React.FunctionComponent<Props> = (props) => {
     const labelCls = prefix === "wui-radio-button" ? prefix : "wui-radio";
     const [isChecked, setChecked] = useState(false);
 
-    // useEffect(() => {
-    //     console.log('-------');
-    //     console.log(document.getElementsByClassName("is-checked"));
-    // });
-
     return (
         <label className={classes(labelCls,
             isChecked ? "is-checked" : undefined,
