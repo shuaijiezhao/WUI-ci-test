@@ -3,24 +3,27 @@ import classes from "../handlers/classes";
 
 interface Props {
     name: string,
-    defaultValue?: string | number | boolean,
-    selectedValue?: string | number | boolean,
-    value?: string | number | boolean,
+    defaultValue: string,
+    selectedValue?: string,
+    value?: string,
     // size?: "lg" | "sm",
 }
 
-export const context = React.createContext("");
+export const nameContext = React.createContext("");
+export const selValue = React.createContext("");
 
 const RadioGroup: React.FunctionComponent<Props> = (props) => {
-    const { name, selectedValue, children } = props;
-    console.log('group---', name, selectedValue);
+    const { name, defaultValue, children } = props;
+    console.log('group---', name);
 
     return (
-        <context.Provider value={name}>
-            <div className={classes("wui-radio-group")}>
-                {children}
-            </div>
-        </context.Provider>
+        <nameContext.Provider value={name}>
+            <selValue.Provider value={defaultValue}>
+                <div className={classes("wui-radio-group")}>
+                    {children}
+                </div>
+            </selValue.Provider>
+        </nameContext.Provider>
     )
 };
 
