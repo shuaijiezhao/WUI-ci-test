@@ -1,0 +1,15 @@
+$main-color: #66afe9;
+
+.wui-input {
+    border: 1px solid #a5adba;
+    line-height: 22px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 0.5px fade_out(#66afe9, 1);
+    transition: box-shadow 250ms;
+    &:focus {
+        outline: none;
+        border-color: $main-color;
+        box-shadow: 0 0 0 0.5px fade_out($main-color, .3);
+    }
+}
