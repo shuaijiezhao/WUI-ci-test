@@ -14,7 +14,8 @@ import './example.scss';
 import IconDemo from "./lib/icon/icon.demo";
 import BreadcrumbExample from "./lib/breadcrumb/breadcrumb.example";
 import FormExample from "./lib/form/form.example";
-import RadioExample from "./lib/radio/radio.example";
+import InputExample from "./lib/input/input.example";
+// import RadioExample from "./lib/radio/radio.example";
 
 const logo = require('./wui.png');
 
@@ -49,7 +50,8 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
         ["表单 Form"],
         [
             ["/form", "表单 Form"],
-            ["/radio", "单选 Radio"],
+            // ["/radio", "单选 Radio"],
+            ["/input", "输入框 Input"],
             ["/switch", "开关 Switch"]
         ]
     ]
@@ -117,7 +119,8 @@ ReactDOM.render(
                         <Route path="/breadcrumb" component={BreadcrumbExample}/>
                         <Route path="/switch" component={SwitchExample}/>
                         <Route path="/form" component={FormExample}/>
-                        <Route path="/radio" component={RadioExample}/>
+                        <Route path="/input" component={InputExample}/>
+                        {/*<Route path="/radio" component={RadioExample}/>*/}
                     </Content>
                     <Footer className="site-footer">
                         <div>Copyright © 2019 版权所有：shuaijiezhao</div>

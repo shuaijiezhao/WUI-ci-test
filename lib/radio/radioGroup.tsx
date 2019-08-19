@@ -1,5 +1,6 @@
 import * as React from "react";
 import classes from "../handlers/classes";
+import {useContext} from "react";
 
 interface Props {
     name: string,
@@ -14,7 +15,6 @@ export const selValue = React.createContext("");
 
 const RadioGroup: React.FunctionComponent<Props> = (props) => {
     const { name, defaultValue, children } = props;
-    console.log('group---', name);
 
     return (
         <nameContext.Provider value={name}>
@@ -26,5 +26,7 @@ const RadioGroup: React.FunctionComponent<Props> = (props) => {
         </nameContext.Provider>
     )
 };
+
+export const useValue = () => useContext(selValue);
 
 export default RadioGroup;

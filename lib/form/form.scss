@@ -1,0 +1,15 @@
+.wui-form {
+    &-td {
+        padding-top: 0;
+        vertical-align: top;
+        line-height: 32px;
+    }
+    &-td + &-td {
+        padding-left: 16px;
+    }
+    &-error {
+        font-size: 0.8em;
+        color: red;
+        margin-top: 4px;
+    }
+}

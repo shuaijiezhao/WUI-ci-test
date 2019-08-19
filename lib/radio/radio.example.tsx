@@ -5,7 +5,7 @@ import RadioGroup from "./radioGroup";
 
 const RadioExample: React.FunctionComponent = () => {
     return (
-        <RadioGroup defaultValue="6" name="fruits">
+        <RadioGroup defaultValue="4" name="fruits">
             <Radio value="1" disabled>苹果</Radio>
             <Radio value="2" disabled>香蕉</Radio>
             <Radio value="3" >葡萄</Radio>
