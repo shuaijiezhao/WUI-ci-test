@@ -25,6 +25,15 @@ const Radio: React.FunctionComponent<Props> = (props) => {
     // const [isChecked, setChecked] = useState(value === useContext(selValue));
     // const [val, dispatch] = useValue();
 
+    console.log(JSON.stringify(props));
+
+    const handleClick = () => {
+        if (disabled) {
+            return;
+        }
+        // props.onChange && props.onChange();
+    };
+
     return (
         <label className={classes(labelCls,
             value === useContext(selValue) ? "is-checked" : undefined,
@@ -32,6 +41,7 @@ const Radio: React.FunctionComponent<Props> = (props) => {
             colors !== undefined ? `wui-btn-${colors}` : undefined,
             size !== undefined ? `wui-btn-${size}` : undefined,
             inverse !== undefined ? `wui-btn-${inverse}` : undefined)}
+            onClick = {handleClick}
             >
             <input name={useContext(nameContext)} type="radio" disabled={disabled} {...others}/>
             <label className={labelCls + '-label'}>{children}</label>
