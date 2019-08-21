@@ -2,7 +2,7 @@ import * as React from "react";
 import Radio from "./radio";
 
 interface Props {
-    value: string | number,
+    value: string,
     style?: {},
     prefix?: 'wui-radio-button'
 }

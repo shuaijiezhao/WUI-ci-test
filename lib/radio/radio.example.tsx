@@ -4,8 +4,7 @@ import Radio from "./radio";
 import RadioGroup from "./radioGroup";
 
 const RadioExample: React.FunctionComponent = () => {
-    const handleChange = () => {
-    };
+    const handleChange = () => {};
     return (
         <RadioGroup defaultValue="4" name="fruits" onChange={handleChange}>
             <Radio value="1" disabled>苹果</Radio>
