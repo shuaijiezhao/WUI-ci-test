@@ -3,7 +3,7 @@ import classes from "../handlers/classes";
 
 import "./radio.scss";
 import {useContext} from "react";
-import {nameContext, valueContext} from "./radioGroup";
+import {valueContext} from "./radioGroup";
 
 /**
  * colors 颜色 样式
@@ -22,18 +22,13 @@ interface Props {
 const Radio: React.FunctionComponent<Props> = (props) => {
     const { colors, size, value, inverse, prefix, disabled, children, ...others } = props;
     const labelCls = prefix === "wui-radio-button" ? prefix : "wui-radio";
-    // const [isChecked, setChecked] = useState(value === useContext(selValue));
-
-    console.log(JSON.stringify(props));
-
     const { state, dispatch } = useContext(valueContext);
-    console.log('state---' + JSON.stringify(state));
 
     const handleClick = () => {
         if (disabled) {
             return;
         }
-        dispatch({type: "ONCHANGE", payload: value})
+        dispatch({type: "ONCHANGE", payload: value});
     };
 
     return (
@@ -45,7 +40,7 @@ const Radio: React.FunctionComponent<Props> = (props) => {
             inverse !== undefined ? `wui-btn-${inverse}` : undefined)}
             onClick = {handleClick}
             >
-            <input name={useContext(nameContext)} type="radio" disabled={disabled} {...others}/>
+            <input name={state.name} type="radio" disabled={disabled} {...others}/>
             <label className={labelCls + '-label'}>{children}</label>
         </label>
     )
