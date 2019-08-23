@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useContext} from "react";
+import {CSSProperties, useContext} from "react";
 import classes from "../handlers/classes";
 import {valueContext} from "./valueContext";
 
@@ -16,11 +16,12 @@ interface Props {
     disabled?: boolean,
     inverse?: boolean,
     prefix?: string,
-    value: string
+    value: string,
+    style?: CSSProperties
 }
 
 const Radio: React.FunctionComponent<Props> = (props) => {
-    const { colors, size, value, inverse, prefix, disabled, children, ...others } = props;
+    const { colors, size, style, value, inverse, prefix, disabled, children, ...others } = props;
     const labelCls = prefix === "wui-radio-button" ? prefix : "wui-radio";
     const { state, dispatch } = useContext(valueContext);
 
@@ -35,10 +36,11 @@ const Radio: React.FunctionComponent<Props> = (props) => {
         <label className={classes(labelCls,
             value === state.selectValue ? "is-checked" : undefined,
             disabled ? "disabled" : undefined,
-            colors !== undefined ? `wui-btn-${colors}` : undefined,
-            size !== undefined ? `wui-btn-${size}` : undefined,
-            inverse !== undefined ? `wui-btn-${inverse}` : undefined)}
+            colors !== undefined ? `wui-radio-${colors}` : undefined,
+            size !== undefined ? `wui-radio-${size}` : undefined,
+            inverse !== undefined ? `wui-radio-inverse` : undefined)}
             onClick = {handleClick}
+            style = {style}
             >
             <input name={state.name} type="radio" disabled={disabled} {...others}/>
             <label className={labelCls + '-label'}>{children}</label>

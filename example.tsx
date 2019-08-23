@@ -14,7 +14,7 @@ import './example.scss';
 import IconDemo from "./lib/icon/icon.demo";
 import BreadcrumbExample from "./lib/breadcrumb/breadcrumb.example";
 import FormExample from "./lib/form/form.example";
-import InputExample from "./lib/input/input.example";
+// import InputExample from "./lib/input/input.example";
 import RadioExample from "./lib/radio/radio.example";
 
 const logo = require('./wui.png');
@@ -51,7 +51,7 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
         [
             ["/form", "表单 Form"],
             ["/radio", "单选 Radio"],
-            ["/input", "输入框 Input"],
+            // ["/input", "输入框 Input"],
             ["/switch", "开关 Switch"]
         ]
     ]
@@ -63,6 +63,7 @@ const App: React.FunctionComponent = () => {
             <h1>关于 <code>wui-react</code></h1>
             <p>
                 <code>wui-react</code> 是一套基 <code>React.js</code> 的开源组件库。
+                <div style={{color: "red"}}>PS：整体参考企业级大前端基础设施平台钉耙 <a href="tinper.org">tinper.org</a></div>
             </p>
         </div>
     )
@@ -119,7 +120,7 @@ ReactDOM.render(
                         <Route path="/breadcrumb" component={BreadcrumbExample}/>
                         <Route path="/switch" component={SwitchExample}/>
                         <Route path="/form" component={FormExample}/>
-                        <Route path="/input" component={InputExample}/>
+                        {/*<Route path="/input" component={InputExample}/>*/}
                         <Route path="/radio" component={RadioExample}/>
                     </Content>
                     <Footer className="site-footer">
