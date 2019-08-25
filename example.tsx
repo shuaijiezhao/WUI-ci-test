@@ -16,6 +16,7 @@ import BreadcrumbExample from "./lib/breadcrumb/breadcrumb.example";
 import FormExample from "./lib/form/form.example";
 // import InputExample from "./lib/input/input.example";
 import RadioExample from "./lib/radio/radio.example";
+import CheckboxExample from "./lib/checkbox/checkbox.example";
 
 const logo = require('./wui.png');
 
@@ -51,6 +52,7 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
         [
             ["/form", "表单 Form"],
             ["/radio", "单选 Radio"],
+            ["/checkbox", "多选 Checkbox"],
             // ["/input", "输入框 Input"],
             ["/switch", "开关 Switch"]
         ]
@@ -122,6 +124,7 @@ ReactDOM.render(
                         <Route path="/form" component={FormExample}/>
                         {/*<Route path="/input" component={InputExample}/>*/}
                         <Route path="/radio" component={RadioExample}/>
+                        <Route path="/checkbox" component={CheckboxExample}/>
                     </Content>
                     <Footer className="site-footer">
                         <div>Copyright © 2019 版权所有：shuaijiezhao</div>

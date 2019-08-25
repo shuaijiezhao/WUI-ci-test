@@ -1,5 +1,5 @@
 import * as React from "react";
-import {CSSProperties, useContext} from "react";
+import {CSSProperties, HTMLAttributes, useContext} from "react";
 import classes from "../handlers/classes";
 import {valueContext} from "./valueContext";
 
@@ -10,7 +10,7 @@ import "./radio.scss";
  * size 大小
  * inverse 样式 是否使用红色填充
  */
-interface Props {
+interface Props extends HTMLAttributes<HTMLElement>{
     colors?: 'primary' | 'success' | 'info' | 'warning' | 'danger' | 'dark',
     size?: 'sm' | 'lg',
     disabled?: boolean,
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const Radio: React.FunctionComponent<Props> = (props) => {
-    const { colors, size, style, value, inverse, prefix, disabled, children, ...others } = props;
+    const { colors, size, style, value, className, inverse, prefix, disabled, children, ...others } = props;
     const labelCls = prefix === "wui-radio-button" ? prefix : "wui-radio";
     const { state, dispatch } = useContext(valueContext);
 
@@ -33,7 +33,7 @@ const Radio: React.FunctionComponent<Props> = (props) => {
     };
 
     return (
-        <label className={classes(labelCls,
+        <label className={classes(labelCls, className,
             value === state.selectValue ? "is-checked" : undefined,
             disabled ? "disabled" : undefined,
             colors !== undefined ? `wui-radio-${colors}` : undefined,

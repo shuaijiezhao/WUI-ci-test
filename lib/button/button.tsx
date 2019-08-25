@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {ButtonHTMLAttributes} from 'react';
 import './button.scss';
 import classes from '../handlers/classes';
 
-interface Props {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     colors?: 'primary' | 'secondary' | 'accent' | 'success' | 'info' | 'warning' | 'danger' | 'dark' | 'light' | 'default',
     onClick?: React.MouseEventHandler,
     bordered?: 'border',

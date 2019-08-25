@@ -1,10 +1,10 @@
 import * as React from "react";
 import classes from "../handlers/classes";
-import {useState} from "react";
+import {HTMLAttributes, useState} from "react";
 
 import "./switch.scss"
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLSpanElement>{
     checked: boolean,
     // defaultChecked: boolean,
     // onChange: React.MouseEventHandler,
@@ -13,7 +13,6 @@ interface Props {
     disabled?: boolean,
     size?: "sm" | "lg",
     colors?: "primary" | "success" | "info" | "dark" | "warning",
-    className?: string
 }
 
 export {Props};
