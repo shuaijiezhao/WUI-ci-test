@@ -16,14 +16,20 @@ const Checkbox: React.FunctionComponent<Props> = (props) => {
     const { colors, onChange, disabled, inverse, className, checked, children, ...others } = props;
     const preCls: string = 'wui-checkbox';
     const [ isChecked, setIsChecked ] = useState(checked);
+    const handlerClick = (): void => {
+        if (onChange) {
+            onChange();
+        } else {
+            setIsChecked(!isChecked)
+        }
+    };
     return (
         <label className={classes(className, preCls,
                 colors !== undefined ? `${preCls}-${colors}` : undefined,
                 disabled ? `disabled` : undefined,
                 inverse !== undefined ? `${preCls}-inverse` : undefined,
-                isChecked ? 'is-checked' : undefined,
-                )}
-                onClick={() => setIsChecked(!isChecked)}>
+                onChange && checked ? 'is-checked' : (isChecked ? "is-checked" : undefined))}
+                onClick={handlerClick}>
             <input type="checkbox" disabled={disabled} {...others}/>
             <label className={preCls + '-label'}>{children}</label>
         </label>
