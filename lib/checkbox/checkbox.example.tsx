@@ -2,18 +2,11 @@ import * as React from "react";
 import Checkbox from "./checkbox";
 import {Fragment, useState} from "react";
 import Button from "../button/button";
-// import CheckboxGroup from "./checkboxGroup";
+import CheckboxGroup from "./checkboxGroup";
 
 const CheckboxExample: React.FunctionComponent = () => {
-    const [isChecked, setIsChecked] = useState(false);
-    const [isDisable, setIsDisable] = useState(false);
-
-    const disabledClick = () => {
-        setIsDisable(!isDisable);
-    };
-    const checkClick = () => {
-        setIsChecked(!isChecked);
-    };
+    const isChecked = useISSelf(false);
+    const isDisable = useISSelf(false);
 
     return (
         <Fragment>
@@ -39,28 +32,37 @@ const CheckboxExample: React.FunctionComponent = () => {
                 <p>`checked` 参数设置是否选中，`disabled`设置是否可用。</p><br/>
                 <p>
                     <Button colors="secondary" style={{marginRight: "8px"}}
-                            onClick={checkClick}>{isChecked ? 'unCheck' : "check"}</Button>
-                    <Button colors="secondary" onClick={disabledClick}>{isDisable ? "enable" : "disable"}</Button>
+                            onClick={isChecked.handlerChange}>{isChecked.value ? 'unCheck' : "check"}</Button>
+                    <Button colors="secondary" onClick={isDisable.handlerChange}>{isDisable.value ? "enable" : "disable"}</Button>
                 </p>
                 <p>
-                    <Checkbox disabled={isDisable} checked={isChecked} onChange={checkClick}>
-                        {`${isDisable ? "disable" : "enable"} - ${isChecked ? "check" : "unCheck"}`}
+                    <Checkbox disabled={isDisable.value} checked={isChecked.value} onChange={isChecked.handlerChange}>
+                        {`${isDisable.value ? "disable" : "enable"} - ${isChecked.value ? "check" : "unCheck"}`}
                     </Checkbox>
                 </p>
             </div>
-            {/*<div className="wui-panel">*/}
-                {/*<h3><strong>CheckboxGroup 在 form 中使用</strong></h3><br/>*/}
-                {/*<p>`value` 参数设置默认值，`onChange`设置值改变的回调。</p><br/>*/}
-                {/*<CheckboxGroup value={[]}>*/}
-                    {/*<Checkbox value='1'>1</Checkbox>*/}
-                    {/*<Checkbox value='2'>2</Checkbox>*/}
-                    {/*<Checkbox value='3'>3</Checkbox>*/}
-                    {/*<Checkbox value='4'>4</Checkbox>*/}
-                    {/*<Checkbox value='5'>5</Checkbox>*/}
-                {/*</CheckboxGroup>*/}
-            {/*</div>*/}
+            <div className="wui-panel">
+                <h3><strong>CheckboxGroup 基本使用</strong></h3><br/>
+                <p>`value` 参数设置默认值，`onChange`设置值改变的回调，`disabled`设置是否可用</p><br/>
+                <CheckboxGroup value={[]} style={{marginBottom: "10px"}}>
+                    <Checkbox value='1'>1</Checkbox>
+                    <Checkbox value='2' checked>2</Checkbox>
+                    <Checkbox value='3'>3</Checkbox>
+                    <Checkbox value='4' disabled>4</Checkbox>
+                    <Checkbox value='5'>5</Checkbox>
+                </CheckboxGroup>
+            </div>
         </Fragment>
     )
+};
+
+const useISSelf = (initialValue: boolean) => {
+    const [value, setValue] = useState(initialValue);
+    const handlerChange = () => setValue(!value);
+    return {
+        value,
+        handlerChange
+    }
 };
 
 export default CheckboxExample;

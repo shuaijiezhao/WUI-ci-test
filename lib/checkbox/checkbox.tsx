@@ -9,13 +9,13 @@ interface Props extends HTMLAttributes<HTMLElement>{
     inverse?: boolean;
     checked?: boolean;
     onChange?: () => void;
+    value?: string;
 }
-
 
 const Checkbox: React.FunctionComponent<Props> = (props) => {
     const { colors, onChange, disabled, inverse, className, checked, children, ...others } = props;
     const preCls: string = 'wui-checkbox';
-    const [ isChecked, setIsChecked ] = useState(checked);
+    const [ isChecked, setIsChecked ] = useState(checked || false);
     const handlerClick = (): void => {
         if (onChange) {
             onChange();

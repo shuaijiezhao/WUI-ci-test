@@ -12,11 +12,8 @@ interface Props {
     // size?: "lg" | "sm",
 }
 
-
-
 const RadioGroup: React.FunctionComponent<Props> = (props) => {
     const { name, defaultValue, children, ...others } = props;
-
 
     const [state, dispatch] = useReducer(reducer, {
         selectValue: defaultValue,
