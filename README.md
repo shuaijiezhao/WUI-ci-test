@@ -3,7 +3,7 @@
 
 * 下载依赖包
 在根目录下执行    
-npm install 或者用 yarn
+npm install 或者 yarn
 * 启动   
 yarn start
 * 构建   
