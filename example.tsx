@@ -65,7 +65,7 @@ const App: React.FunctionComponent = () => {
             <h1>关于 <code>wui-react</code></h1>
             <p>
                 <code>wui-react</code> 是一套基 <code>React.js</code> 的开源组件库。
-                <div style={{color: "red"}}>PS：整体参考企业级大前端基础设施平台钉耙 <a href="tinper.org">tinper.org</a></div>
+                <div style={{color: "red"}}>PS：整体参考企业级大前端基础设施平台钉耙 <a href="http://www.tinper.org" target="_blank">tinper.org</a></div>
             </p>
         </div>
     )
