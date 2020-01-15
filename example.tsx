@@ -9,8 +9,6 @@ import PageLayoutExample from "./lib/pagelayout/pagelayout.example";
 // import IconExample from "./lib/icon/icon.example";
 import Pagelayout, {Aside, Content, Footer, Header} from "./lib/pagelayout/pagelayout";
 import SwitchExample from "./lib/switch/switch.example";
-
-import './example.scss';
 import IconDemo from "./lib/icon/icon.demo";
 import BreadcrumbExample from "./lib/breadcrumb/breadcrumb.example";
 import FormExample from "./lib/form/form.example";
@@ -19,54 +17,10 @@ import RadioExample from "./lib/radio/radio.example";
 import CheckboxExample from "./lib/checkbox/checkbox.example";
 import BadgeExample from "./lib/badge/badge.example";
 import TagExample from "./lib/tag/tag.example";
+import floorArray from "./example.config";
 
+import './example.scss';
 const logo = require('./wui.png');
-
-const floorArray:Array<Array<Array<string | Array<string>>>> = [
-    [
-        ["基础 General"],
-        [
-            ["/icon", "图标 Icon"],
-            ["/button", "按钮 Button"]
-        ]
-    ],
-    [
-        ["布局 Pagelayout"],
-        [
-            ["/layout", "栅格布局 Layout"],
-            ["/pagelayout", "页面布局 PageLayout"]
-        ]
-    ],
-    [
-        ["视图 View"],
-        [
-            ["/badge", "标记 Badge"],
-            ["/tag", "标记 Tag"],
-        ]
-    ],
-    [
-        ["导航 Navigation"],
-        [
-            ["/breadcrumb", "面包屑 Breadcrumb"]
-        ]
-    ],
-    [
-        ["反馈 Feedback"],
-        [
-            ["/dialog", "模态窗 Model"]
-        ]
-    ],
-    [
-        ["表单 Form"],
-        [
-            ["/form", "表单 Form"],
-            ["/radio", "单选 Radio"],
-            ["/checkbox", "多选 Checkbox"],
-            // ["/input", "输入框 Input"],
-            ["/switch", "开关 Switch"]
-        ]
-    ]
-];
 
 const App: React.FunctionComponent = () => {
     return (
