@@ -52,6 +52,20 @@ const IconExample: React.FunctionComponent = () => {
                         <div>Cart</div><br/>
                         <div>cart</div>
                     </li>
+                    <li>
+                        <div className="icon-outer">
+                            <Icon name="delete"/>
+                        </div>
+                        <div>Delete</div><br/>
+                        <div>delete</div>
+                    </li>
+                    <li>
+                        <div className="icon-outer">
+                            <Icon name="deleteX"/>
+                        </div>
+                        <div>DeleteX</div><br/>
+                        <div>deleteX</div>
+                    </li>
                 </ul>
             </div>
         </div>

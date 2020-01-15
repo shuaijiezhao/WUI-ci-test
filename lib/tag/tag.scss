@@ -1,0 +1,128 @@
+.wui-tag {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  max-width: 150px;
+  overflow: hidden;
+  outline: none;
+  text-decoration: none;
+  padding: 0 8px;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 12px;
+  margin-right: 23px;
+  &.wui-tag-disabled {
+    cursor: not-allowed;
+    background-color: #EBECF0;
+    color: #909090;
+  }
+  &.wui-tag-disabled:hover,
+  &.wui-tag-disabled:active,
+  &.wui-tag-disabled:focus {
+    background-color: #EBECF0;
+    color: #909090;
+  }
+}
+.wui-tag-border {
+  color: white;
+  border: 1px solid #A5ADBA;
+}
+.wui-tag-dark {
+  color: #FFFFFF;
+  background-color: #505F79;
+}
+.wui-tag-light {
+  color: #212121;
+  background-color: #F7F9FB;
+  border: 1px solid #A5ADBA;
+}
+.wui-tag.wui-tag-success {
+  color: #FFFFFF;
+  background-color: rgb(76,175,80);
+  border: 1px rgb(76,175,80) solid;
+}
+.wui-tag.wui-tag-warning {
+  color: #FFFFFF;
+  background-color: rgb(255,152,0);
+  border: 1px rgb(255,152,0) solid;
+}
+.wui-tag.wui-tag-danger {
+  color: #FFFFFF;
+  background-color: rgb(244,67,54);
+  border: 1px rgb(244,67,54) solid;
+}
+.wui-tag.wui-tag-info {
+  color: #FFFFFF;
+  background-color: rgb(0,188,212);
+  border: 1px rgb(0,188,212) solid;
+}
+.wui-tag-disabled, .wui-tag-disabled {
+  cursor: not-allowed;
+  background-color: #EBECF0;
+  color: #909090;
+}
+.wui-tag-deleted {
+  color: #212121;
+  border: 1px solid #A5ADBA;
+  background-color: #F7F9FB;
+}
+.wui-tag-select {
+  background: #FFFFFF;
+  color: #212121;
+  cursor: pointer;
+}
+.wui-tag-select:hover {
+  background: #EBECF0;
+}
+.wui-tag-selected {
+  background: #505F79;
+  color: white;
+  cursor: pointer;
+}
+.wui-tag-selected:hover {
+  background: #505F79;
+  color: white;
+}
+.wui-tag.wui-tag-success {
+  color: #FFFFFF;
+  background-color: rgb(76,175,80);
+  border: 1px rgb(76,175,80) solid; }
+
+.wui-tag.wui-tag-warning {
+  color: #FFFFFF;
+  background-color: rgb(255,152,0);
+  border: 1px rgb(255,152,0) solid;
+}
+.wui-tag.wui-tag-danger {
+  color: #FFFFFF;
+  background-color: rgb(244,67,54);
+  border: 1px rgb(244,67,54) solid;
+}
+.wui-tag.wui-tag-info {
+  color: #FFFFFF;
+  background-color: rgb(0,188,212);
+  border: 1px rgb(0,188,212) solid;
+}
+.wui-tag-border.wui-tag-success {
+  color: rgb(76,175,80);
+  background-color: #F1F8E9;
+  border: 1px rgb(76,175,80) solid;
+}
+.wui-tag-border.wui-tag-warning {
+  color: rgb(255,152,0);
+  background-color: #FFF8E1;
+  border: 1px rgb(255,152,0) solid;
+}
+.wui-tag-border.wui-tag-danger {
+  color: rgb(244,67,54);
+  background-color: #FFEBEE;
+  border: 1px rgb(244,67,54) solid;
+}
+.wui-tag-border.wui-tag-info {
+  color: rgb(0,188,212);
+  background-color: #E0F7FA;
+  border: 1px rgb(0,188,212) solid;
+}

@@ -17,6 +17,8 @@ import FormExample from "./lib/form/form.example";
 // import InputExample from "./lib/input/input.example";
 import RadioExample from "./lib/radio/radio.example";
 import CheckboxExample from "./lib/checkbox/checkbox.example";
+import BadgeExample from "./lib/badge/badge.example";
+import TagExample from "./lib/tag/tag.example";
 
 const logo = require('./wui.png');
 
@@ -33,6 +35,13 @@ const floorArray:Array<Array<Array<string | Array<string>>>> = [
         [
             ["/layout", "栅格布局 Layout"],
             ["/pagelayout", "页面布局 PageLayout"]
+        ]
+    ],
+    [
+        ["视图 View"],
+        [
+            ["/badge", "标记 Badge"],
+            ["/tag", "标记 Tag"],
         ]
     ],
     [
@@ -63,10 +72,10 @@ const App: React.FunctionComponent = () => {
     return (
         <div id="wui-docs" className="wui-docs">
             <h1>关于 <code>wui-react</code></h1>
-            <p>
+            <div>
                 <code>wui-react</code> 是一套基 <code>React.js</code> 的开源组件库。
-                <div style={{color: "red"}}>PS：整体参考企业级大前端基础设施平台钉耙 <a href="http://www.tinper.org" target="_blank">tinper.org</a></div>
-            </p>
+                <div style={{color: "red", fontSize: '12px'}}>PS：整体参考企业级大前端基础设施平台钉耙 <a href="http://www.tinper.org" target="_blank">tinper.org</a></div>
+            </div>
         </div>
     )
 };
@@ -125,6 +134,8 @@ ReactDOM.render(
                         {/*<Route path="/input" component={InputExample}/>*/}
                         <Route path="/radio" component={RadioExample}/>
                         <Route path="/checkbox" component={CheckboxExample}/>
+                        <Route path="/badge" component={BadgeExample}/>
+                        <Route path="/tag" component={TagExample}/>
                     </Content>
                     <Footer className="site-footer">
                         <div>Copyright © 2019 版权所有：shuaijiezhao</div>
