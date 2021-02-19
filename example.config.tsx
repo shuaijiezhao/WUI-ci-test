@@ -39,7 +39,8 @@ const floorArray: Array<Array<Array<string | Array<string>>>> = [
             ["/radio", "单选 Radio"],
             ["/checkbox", "多选 Checkbox"],
             // ["/input", "输入框 Input"],
-            ["/switch", "开关 Switch"]
+            ["/switch", "开关 Switch"],
+            ["/scroll", "滚动条 Scroll"]
         ]
     ]
 ];

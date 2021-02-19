@@ -17,6 +17,7 @@ import RadioExample from "./lib/radio/radio.example";
 import CheckboxExample from "./lib/checkbox/checkbox.example";
 import BadgeExample from "./lib/badge/badge.example";
 import TagExample from "./lib/tag/tag.example";
+import ScrollExample from "./lib/scroll/scroll.example";
 import floorArray from "./example.config";
 
 import './example.scss';
@@ -90,6 +91,7 @@ ReactDOM.render(
                         <Route path="/checkbox" component={CheckboxExample}/>
                         <Route path="/badge" component={BadgeExample}/>
                         <Route path="/tag" component={TagExample}/>
+                        <Route path="/scroll" component={ScrollExample}/>
                     </Content>
                     <Footer className="site-footer">
                         <div>Copyright © 2019 版权所有：shuaijiezhao</div>
