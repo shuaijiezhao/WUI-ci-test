@@ -5,11 +5,16 @@ import "./scroll.scss";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
+// 是否是手机端，pc端没有 ontouch 事件
+const isTouchDevice: boolean = 'ontouchstart' in document;
+
 const Scroll: React.FC<Props> = (props) => {
     const { children, ...rest } = props;
     const wrapperRef = useRef<HTMLDivElement>(null);
     const [barHeight, setBarHeight] = useState(0);
     const [barTop, _setBarTop] = useState(0);
+    const [barVisible, setBarVisible] = useState(false);
+    const timeoutIdRef = useRef<number | null>(null);
 
     const useWrapperRefRect = () => {
         const { current } = wrapperRef;
@@ -27,6 +32,14 @@ const Scroll: React.FC<Props> = (props) => {
     const onScroll: UIEventHandler = (e) => {
         const { scrollHeight, viewHeight, viewTop } = useWrapperRefRect();
         _setBarTop(viewTop*viewHeight / scrollHeight);
+        
+        if (isTouchDevice) {
+            setBarVisible(true);
+            timeoutIdRef.current && window.clearTimeout(timeoutIdRef.current);
+            timeoutIdRef.current = window.setTimeout(() => {
+                setBarVisible(false);
+            }, 300)
+        }
     }
 
     const draggingRef = useRef(false);
@@ -84,10 +97,13 @@ const Scroll: React.FC<Props> = (props) => {
                  onScroll={onScroll}>
                 {children}
             </div>
-            <div className={"wui-scroll-track"}>
-                <div className="wui-scroll-bar" style={{height: barHeight, transform: `translateY(${barTop}px)`}}
-                     onMouseDown={onMouseDownBar}></div>
-            </div>
+            {
+                !isTouchDevice && !barVisible && <div className={"wui-scroll-track"}>
+                    <div className="wui-scroll-bar" style={{height: barHeight, transform: `translateY(${barTop}px)`}}
+                        onMouseDown={onMouseDownBar}></div>
+                </div>
+            }
+            
         </div>
     )
 }
