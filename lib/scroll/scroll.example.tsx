@@ -7,7 +7,7 @@ const ScrollExample: React.FC = () => {
             <div className="wui-panel">
                 <h3><strong>Scroll 基本用法</strong></h3><br/>
                 {/* <p></p><br/> */}
-                <Scroll style={{height: 300, border: '1px solid blue'}}>
+                <Scroll style={{height: 300, border: '1px solid red'}}>
                     <p>1</p>
                     <p>2</p>
                     <p>3</p>
