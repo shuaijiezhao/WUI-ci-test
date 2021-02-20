@@ -1,13 +1,22 @@
 import * as React from "react";
+import Icon from "../icon/icon";
 import Scroll from './scroll';
 
 const ScrollExample: React.FC = () => {
+    const refreshIcon = (): React.ReactElement => {
+        return <Icon name="cart"/>
+    }
+
+    const onPull = () => {
+        console.log("通知外界用户释放了下拉更新")
+    }
+
     return (
         <React.Fragment>
             <div className="wui-panel">
                 <h3><strong>Scroll 基本用法</strong></h3><br/>
                 {/* <p></p><br/> */}
-                <Scroll style={{height: 300, border: '1px solid red'}}>
+                <Scroll style={{height: 300, border: '1px solid red'}} onPull={onPull} refreshIconRender={refreshIcon}>
                     <p>1</p>
                     <p>2</p>
                     <p>3</p>

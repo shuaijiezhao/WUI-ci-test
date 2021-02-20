@@ -1,27 +1,77 @@
 import * as React from "react";
-import { HTMLAttributes, UIEventHandler, MouseEventHandler, useState, useEffect, useRef } from "react";
+import { HTMLAttributes, UIEventHandler, MouseEventHandler, TouchEventHandler, useState, useEffect, useRef } from "react";
 import scrollBarWidth from "./scroll-width";
 import "./scroll.scss";
 
-interface Props extends HTMLAttributes<HTMLDivElement> {}
+interface Props extends HTMLAttributes<HTMLDivElement> {
+    onPull?: ()=>void;
+    refreshIconRender?: ()=>React.ReactElement
+}
 
 // 是否是手机端，pc端没有 ontouch 事件
 const isTouchDevice: boolean = 'ontouchstart' in document;
 
+/**
+ * 滚动条组件
+ * @param refreshIconRender 用来渲染自定义的刷新图标 
+ */
 const Scroll: React.FC<Props> = (props) => {
-    const { children, ...rest } = props;
+    const { children, onPull, refreshIconRender, ...rest } = props;
     const wrapperRef = useRef<HTMLDivElement>(null);
     const [barHeight, setBarHeight] = useState(0);
     const [barTop, _setBarTop] = useState(0);
+
     const [barVisible, setBarVisible] = useState(false);
     const timeoutIdRef = useRef<number | null>(null);
 
     const useWrapperRefRect = () => {
         const { current } = wrapperRef;
         const scrollHeight = current!.scrollHeight;
+        const scrollTop = current!.scrollTop;
         const viewHeight = current!.getBoundingClientRect().height;
         const viewTop = current!.scrollTop
-        return { scrollHeight, viewHeight, viewTop }
+        return { scrollHeight, viewHeight, viewTop, scrollTop }
+    }
+
+    const [translateY, _setTranslateY] = useState(0);
+    const lastYRef = useRef(0);
+    const moveCount = useRef(0);
+    const pulling = useRef(false);
+
+    const setTranslateY = (y: number) => {
+        if (y < 0) {
+            y = 0;
+        } else if (y > 100) {
+            y = 100;
+        }
+        _setTranslateY(y);
+    }
+
+    const onTouchStart: TouchEventHandler = (e) => {
+        const { scrollTop } = useWrapperRefRect();
+        if (scrollTop !== 0) return;
+        pulling.current = true;
+        lastYRef.current = e.touches[0].clientY;
+        moveCount.current = 0;
+    }
+
+    const onTouchMove: TouchEventHandler = (e) => {
+        const deltaY = e.touches[0].clientY - lastYRef.current;
+        moveCount.current += 1;
+        if (moveCount.current === 1 && deltaY < 0) {
+            pulling.current = false;
+        }
+        if (!pulling.current) return;
+        setTranslateY(translateY + deltaY);
+        lastYRef.current = e.touches[0].clientY;
+    }
+
+    const onTouchEnd = () => {
+        if (pulling.current) {
+            _setTranslateY(0);
+            onPull && onPull();
+            pulling.current = false;
+        }
     }
 
     useEffect(() => {
@@ -93,7 +143,11 @@ const Scroll: React.FC<Props> = (props) => {
 
     return (
         <div className={"wui-scroll"} {...rest}>
-            <div ref={wrapperRef} className={"wui-scroll-wrapper"} style={{right: -scrollBarWidth()}}
+            <div ref={wrapperRef} className={"wui-scroll-wrapper"} 
+                 style={{right: -scrollBarWidth(), transform: `translateY(${translateY}px)`}}
+                 onTouchStart={onTouchStart}
+                 onTouchMove={onTouchMove}
+                 onTouchEnd={onTouchEnd}
                  onScroll={onScroll}>
                 {children}
             </div>
@@ -103,7 +157,13 @@ const Scroll: React.FC<Props> = (props) => {
                         onMouseDown={onMouseDownBar}></div>
                 </div>
             }
-            
+            <div className="wui-scroll-pulling" style={{height: translateY}}>
+                {
+                    translateY === 100 ? 
+                    <span className="wui-scroll-pulling-text">松开立即刷新</span> : 
+                    (props.refreshIconRender && props.refreshIconRender() || <span className="wui-scroll-pulling-icon">↓</span> )
+                }
+            </div>
         </div>
     )
 }

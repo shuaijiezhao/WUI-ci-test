@@ -8,6 +8,9 @@
         left: 0;
         bottom: 0;
         right: 0;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     &-track {
         position: absolute;
@@ -23,5 +26,17 @@
         width: 6px;
         background-color: rgba(50, 50, 50, .3);
         border-radius: 3px;
+    }
+    &-pulling {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-text {
+            font-size: 12px;
+        }
+        &-icon {
+            font-size: 30px;
+        }
     }
 }
