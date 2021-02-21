@@ -15,8 +15,9 @@ const ScrollExample: React.FC = () => {
         <React.Fragment>
             <div className="wui-panel">
                 <h3><strong>Scroll 基本用法</strong></h3><br/>
-                {/* <p></p><br/> */}
-                <Scroll style={{height: 300, border: '1px solid red'}} onPull={onPull} refreshIconRender={refreshIcon}>
+                <p>1、PC 端滚动条可以上下拖拽</p><br/>
+                <p>2、移动端具有下拉刷新功能，且下拉图标可以通过 refreshIconRender 函数动态传入</p><br/>
+                <Scroll style={{height: 300}} onPull={onPull} refreshIconRender={refreshIcon}>
                     <p>1</p>
                     <p>2</p>
                     <p>3</p>

@@ -60,6 +60,7 @@ const Scroll: React.FC<Props> = (props) => {
         moveCount.current += 1;
         if (moveCount.current === 1 && deltaY < 0) {
             pulling.current = false;
+            return;
         }
         if (!pulling.current) return;
         setTranslateY(translateY + deltaY);
@@ -126,7 +127,7 @@ const Scroll: React.FC<Props> = (props) => {
     }
 
     const onSelectStart = (e: any) => {
-        wrapperRef.current && e.preventDefault();
+        wrapperRef.current && draggingRef.current && e.preventDefault();
     }
 
     useEffect(() => {
@@ -152,7 +153,7 @@ const Scroll: React.FC<Props> = (props) => {
                 {children}
             </div>
             {
-                !isTouchDevice && !barVisible && <div className={"wui-scroll-track"}>
+                (!isTouchDevice || barVisible) && <div className={"wui-scroll-track"}>
                     <div className="wui-scroll-bar" style={{height: barHeight, transform: `translateY(${barTop}px)`}}
                         onMouseDown={onMouseDownBar}></div>
                 </div>
