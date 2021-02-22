@@ -115,7 +115,7 @@ const Scroll: React.FC<Props> = (props) => {
         draggingRef.current = false;
     }
 
-    const onMouseMoveBar = (e: any) => {
+    const onMouseMoveBar = (e: globalThis.MouseEvent) => {
         if (draggingRef.current) {
             const delta = e.clientY - firstYRef.current;
             const newBarTop = firstBarTopRef.current + delta;
